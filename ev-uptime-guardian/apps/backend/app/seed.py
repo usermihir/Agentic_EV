@@ -1,0 +1,1 @@
+# Startup hook to ensure DB exists & seeded

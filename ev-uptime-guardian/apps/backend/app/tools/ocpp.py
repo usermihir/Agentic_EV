@@ -1,0 +1,1 @@
+# reserveNow, setChargingProfile, changeAvailability (mock)
