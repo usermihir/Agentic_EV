@@ -1,1 +1,9 @@
 # Python deps will be added after scaffolding
+fastapi>=0.104.0
+uvicorn>=0.23.2
+sqlalchemy>=2.0.0
+pydantic>=2.0.0
+python-dotenv>=1.0.0
+langchain>=0.0.330
+langgraph>=0.0.10
+httpx>=0.25.0
