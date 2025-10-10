@@ -50,4 +50,25 @@ def healthz():
 
 # Include routing tools
 from apps.backend.app.tools.route import router as route_router
+from apps.backend.app.tools.station import router as station_router
+from apps.backend.app.operator.router import router as operator_router
+from apps.backend.app.agent.router import router as agent_router
+
+# Wire all routers
+app.include_router(operator_router, prefix="")
 app.include_router(route_router, prefix="")
+app.include_router(station_router)
+app.include_router(agent_router)
+from apps.backend.app.tools.ocpp import router as ocpp_router
+from apps.backend.app.tools.health import router as health_router
+from apps.backend.app.tools.partners import router as partners_router
+from apps.backend.app.tools.points import router as points_router
+from apps.backend.app.tools.kpis import router as kpis_router
+
+app.include_router(route_router, prefix="")
+app.include_router(station_router)
+app.include_router(ocpp_router)
+app.include_router(health_router)
+app.include_router(partners_router)
+app.include_router(points_router)
+app.include_router(kpis_router)
